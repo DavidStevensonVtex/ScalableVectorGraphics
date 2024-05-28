@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The feOffset, feColorMatrix, feBlend and feGaussianBlur Filters</h2>
+
+<svg height="150" width="150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="f1" width="120" height="120">
+      <feOffset in="SourceGraphic" dx="20" dy="20" />
+      <feColorMatrix type="matrix" values = "0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0" />
+      <feGaussianBlur stdDeviation="10" />
+      <feBlend in="SourceGraphic" in2="blurOut" />
+    </filter>
+  </defs>
+  <rect width="90" height="90" stroke="green" stroke-width="3" fill="yellow" filter="url(#f1)" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+</body>
+</html>
