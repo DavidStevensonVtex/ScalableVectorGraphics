@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The feOffset and feBlend Filters</h2>
+
+<h3>SVG &lt;feOffset&gt;</h3>
+<p>
+    The &lt;feOffset&gt; filter is also used to create a drop shadow effects The idea is to take an SVG graphic, and move it a little bit in the xy plane.
+</p>
+
+<h3> &lt;feOffset&gt; and &lt;feBlend&gt;</h3>
+<p>
+    The first example offsets a rectangle (with &lt;feOffset&gt;), then blend the original on top of the offset image (with &lt;feBlend&gt;):
+</p>
+   
+
+
+<svg height="150" width="150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="f1" width="120" height="120">
+      <feOffset in="SourceGraphic" dx="20" dy="20" />
+      <feBlend in="SourceGraphic" in2="offOut" />
+    </filter>
+  </defs>
+  <rect width="90" height="90" stroke="green" stroke-width="3" fill="yellow" filter="url(#f1)" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+</body>
+</html>
