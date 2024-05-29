@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>A radialGradient with spreadMethod="reflect"</h2>
+
+<svg height="150" width="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="grad1" cx="25%" cy="25%" spreadMethod="reflect">
+      <stop offset="0%" stop-color="red" />
+      <stop offset="100%" stop-color="blue" />
+    </radialGradient>
+  </defs>
+  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+</body>
+</html>
